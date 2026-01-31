@@ -102,13 +102,7 @@ aggregate-loss-modeling/
 │       └── model_comparison.png             # 6-panel diagnostic visualization
 │
 └── 📁 results/                               # Model outputs
-    ├── tweedie_results.rds                  # Tweedie model estimates
-    ├── evt_results.rds                      # GEV/GPD estimates
-    ├── model_comparison.csv                 # Performance comparison
-    ├── validation_report.txt                # ⭐ Validation diagnostics
-    └── tests/                               # Test results
-        ├── test_summary.csv
-        └── test_results.rds
+    ├── Synthetic_exposures.pdf
 ```
 
 ---
@@ -498,5 +492,6 @@ If you use this code or methodology in your research:
 *Built with rigor. Validated with tests. Ready for production.*
 
 </div>
+
 
 
