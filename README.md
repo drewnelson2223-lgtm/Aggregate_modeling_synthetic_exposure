@@ -327,7 +327,7 @@ save_validation_report(report, "results/validation_report.txt")
 
 ### Model Comparison (6-Panel Diagnostic)
 
-![Model Comparison](reports/figures/model_comparison.png)
+![Model Comparison](model_comparison.png)
 
 **Panel 1:** Annual Total Losses - CP-Gamma predictions fail catastrophically (blue triangles), Tweedie tracks actuals (red circles)
 
@@ -372,7 +372,7 @@ save_validation_report(report, "results/validation_report.txt")
 
 ## 📚 Documentation
 
-- **[Full Paper (PDF)](synthetic_exposures.pdf)** - Academic paper with methodology, results, and validation
+- **[Full Paper (PDF)](Synthetic_exposures.pdf)** - Academic paper with methodology, results, and validation
 - **[Testing Guide (TESTING.md)](docs/TESTING.md)** - Comprehensive guide to running tests and validation
 - **[Technical Summary (TESTING_SUMMARY.md)](docs/TESTING_SUMMARY.md)** - Detailed technical documentation
 - **[Project Structure (FINAL_PROJECT_STRUCTURE.md)](docs/FINAL_PROJECT_STRUCTURE.md)** - Complete file organization
@@ -498,4 +498,5 @@ If you use this code or methodology in your research:
 *Built with rigor. Validated with tests. Ready for production.*
 
 </div>
+
 
