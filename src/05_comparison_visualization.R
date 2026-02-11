@@ -72,12 +72,9 @@ create_comparison_and_plots <- function(cp_results, tweedie_results, evt_results
          ylim = c(0, max(comparison$actual) / 1e6 * 1.1))
     lines(comparison$AccidentYear, comparison$fitted_tw / 1e6,
           type = "b", pch = 18, col = "red", lwd = 2, lty = 2)
-    legend("topleft", 
-           legend = c("Actual", "Tweedie (Preferred)"),
-           col = c("black", "red"), 
-           pch = c(16, 18),
-           lty = c(1, 2),
-           lwd = 2)
+    legend("bottomright", legend = c("Actual", "CP-Gamma (Synthetic)", "Tweedie (Preferred)"),
+           col = c("black", "blue", "red"), pch = c(15, 17, 16), lty = 1,
+           cex = 0.7, bg = "white")
     grid()
   }, width = 1000, height = 600)
   
