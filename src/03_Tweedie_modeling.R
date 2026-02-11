@@ -69,7 +69,7 @@ fit_tweedie_model <- function(base_data, p_range = seq(1.1, 1.9, by = 0.05)) {
   
   tweedie_model <- glm(
     Loss ~ AccidentYear + log(Premium),
-    family = tweedie::tweedie(var.power = p_optimal, link.power = 0),
+    family = statmod::tweedie(var.power = p_optimal, link.power = 0),
     data = tweedie_data
   )
   

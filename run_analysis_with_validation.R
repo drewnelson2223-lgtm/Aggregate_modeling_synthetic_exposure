@@ -36,7 +36,7 @@ validation_tracker <- list()
 # ============================================================================
 
 cat("STEP 1/5: Data Preparation with Validation\n")
-source("src/01_data_preparation.R")
+source("src/01_data_prep.R")
 base_data <- prepare_data()
 
 # Validate prepared data
@@ -62,9 +62,8 @@ cat("   Mean loss ratio:", round(data_validation$checks$loss_ratio_mean, 2), "\n
 # ============================================================================
 
 cat("STEP 2/5: Compound Poisson-Gamma (Synthetic Exposure)\n")
-source("src/02_cp_gamma_synthetic.R")
+source("src/02_cp_gamma_synth.R")
 cp_results <- fit_cp_gamma(base_data)
-
 cat("⚠️  Note: This approach uses synthetic assumptions\n")
 cat("   Results are for methodological demonstration only\n\n")
 
@@ -114,7 +113,7 @@ cat("   Bias:", round(pred_validation$metrics$bias_pct, 2), "%\n\n")
 # ============================================================================
 
 cat("STEP 4/5: Extreme Value Analysis with Validation\n")
-source("src/04_extreme_value_analysis.R")
+source("src/04_EVT_analysis.R")
 evt_results <- fit_evt_models(tweedie_results$data)
 
 # Validate EVT models
